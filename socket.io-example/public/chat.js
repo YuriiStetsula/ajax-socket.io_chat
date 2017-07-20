@@ -33,7 +33,8 @@ loginBtn.addEventListener("click",function(e){
 })
 
 sendMsg.addEventListener("click",function(){
-   var obj = {
+  if(inputField.value){
+  var obj = {
         body:  inputField.value,
         sender: user.name,
         reciever: null,
@@ -53,6 +54,10 @@ sendMsg.addEventListener("click",function(){
      socket.emit("message",obj)
      socket.emit("nottyping")
   
+  }else {
+      console.log("Message something!!!")
+  }
+ 
 })
 
 inputField.addEventListener("keyup",function(e){
