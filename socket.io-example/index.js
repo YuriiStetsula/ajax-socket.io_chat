@@ -52,11 +52,15 @@ io.sockets.on("connection",function(client){
     })
 
     client.on("disconnect",function(d){
+        if(user){
         chat.removeUser(user.id)
-
         var users = chat.getAllUsers()  
         io.sockets.emit("onlinelist",users)
         console.log("DISCO!!!!!!!!!!!!!")
+        }else{
+            console.log("no such user")
+        }
+
     })
 })
 

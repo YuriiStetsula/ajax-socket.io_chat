@@ -55,8 +55,12 @@ sendMsg.addEventListener("click",function(){
   
 })
 
-inputField.addEventListener("keydown",function(){
+inputField.addEventListener("keyup",function(e){
     socket.emit("typing",user.name)
+    
+    if(e.keyCode === 8 && inputField.value === ""){
+         socket.emit("nottyping")
+    }
 })
 
 
