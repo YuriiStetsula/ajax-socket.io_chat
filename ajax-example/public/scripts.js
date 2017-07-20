@@ -144,8 +144,9 @@ function render(e){
   e._messages.forEach(function(el){
      
       var contentMessage = document.createElement("div")
-        
-                if(el.recieverId === "@"+loggined.getNick()){
+                console.log(loggined.getNick())
+                console.log(el.recieverId)
+                if(el.recieverId === loggined.getNick()){
                       contentMessage.className = "to_usermessage"
 
                 }else{
