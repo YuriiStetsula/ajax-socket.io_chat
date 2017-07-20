@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <div class="wrapper">
+       <div class="row">
+            <div class="sidebar">
+                <div class="users-online">
+
+                </div>
+
+                <div class="login"></div>
+            </div>
+            <div class="content">
+                <div class="chat-box">
+                   <span class="typing"></span>
+                </div>
+                 <div class="field">
+                    <input id="input-field"type="text">
+                    <button id="send-msg">Message</button>    
+                </div>   
+            </div>    
+            </div>  
+           
+     </div>
+
+     <div id="overlay">
+           <div class="reg-form">
+        <div class="reg-inside-wrapper">
+           <form action="" method="" name="registration">
+            <div class="reg-head">
+                <h2>Create  account</h2>
+            </div>
+            <div class="reg-inpt">
+                <input type="text"  name="userName"  id="userName" placeholder="first name"> 
+            </div>
+         
+            <div class="reg-inpt">
+                <input type="text" name="userNickName" id="userNickName" placeholder="login">
+            </div>
+           
+             <div class="btn-wrap">
+                <input type="submit" class="btn" value="create">
+            </div>
+            </form>
+           
+        </div>
+    </div>
+     </div>
+
+
+     <script src="/socket.io/socket.io.js"> </script>
+     <script src="chat.js"> </script>
+</body>
+</html>

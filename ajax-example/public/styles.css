@@ -1,0 +1,72 @@
+
+
+
+
+.sidebar{
+    background-color: darkslateblue;
+    height:100vh
+
+}
+
+.content{
+    height:90vh;
+    
+    overflow-y: scroll;
+    
+}
+
+#input{
+   width: 90%;
+    height:100%;
+}
+
+.form{
+
+    height:10vh;
+   
+}
+
+
+.online-users{
+    display: block;
+    color:white;
+    padding-top:10px;
+}
+
+.online-users span{
+    width:70%;
+    display: block;
+    padding: 1px;
+    background-color: white;
+    color: black;
+    border-radius:2px;
+    margin-bottom:10px;
+    margin-left:15px;
+}
+
+.to_usermessage{
+    background-color: pink
+}
+
+.content-message{
+   
+    margin-bottom:25px;
+    width:auto;
+    width:auto;
+ 
+}
+
+.content-message_username{
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content-message_usermessage{
+     padding-top: 5px;
+     padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
